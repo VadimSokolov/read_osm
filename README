@@ -1,0 +1,23 @@
+# POLARISRouter
+
+Library for reading OSM files in PBF format, extracting a graph topology and wring it to a shape file
+
+
+Files in osmpbf are the master definition of the PBF protocol and were downloaded from https://github.com/scrosby/OSM-binary/tree/master/src
+
+Those sites I found convenient to download data from:
+* http://download.geofabrik.de/
+* http://planet.openstreetmap.org/pbf/
+
+For a full list of data provider sites: http://wiki.openstreetmap.org/wiki/Planet.osm
+
+osmpbfreader.h as well as some of the code in readgraph.h was downloaded from: https://github.com/CanalTP/libosmpbfreader
+
+Original description of the format: http://wiki.openstreetmap.org/wiki/PBF_Format
+
+Dependencies:
+* ZLIB: for extracting data from pbf files
+* PROTOBUF: for the same reason
+* GDAL: is optional, if you want to have a capability to generate a shapefile
+* Boost: graph library is used as an example
+ 
